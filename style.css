@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-off: rgba(150, 46, 46, 0.658);
+  --color-on: rgb(221, 15, 0);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #111;
+}
+
+.clock-container {
+  margin-top: 50vh;
+  padding: 40px;
+  width: 1200px;
+  height: 400px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  transform: translateY(-50%);
+}
+
+.digit {
+  position: relative;
+  height: 100%;
+  width: 200px;
+}
+
+.stroke {
+  background-color: var(--color-off);
+  height: 120px;
+  width: 30px;
+  border-radius: 100px;
+  position: absolute;
+}
+
+.stroke-1 {
+  top: 35px;
+}
+
+.stroke-2 {
+  top: 20px;
+  left: 20px;
+  transform-origin: top;
+  transform: rotate(-90deg);
+}
+
+.stroke-3 {
+  bottom: 35px;
+}
+
+.stroke-4 {
+  bottom: 20px;
+  left: 20px;
+  transform-origin: bottom;
+  transform: rotate(90deg);
+}
+
+.stroke-5 {
+  bottom: 40px;
+  left: 20px;
+  transform-origin: top;
+  transform: rotate(-90deg);
+}
+
+.stroke-6 {
+  top: 35px;
+  right: 10px;
+}
+
+.stroke-7 {
+  bottom: 35px;
+  right: 10px;
+}
+
+.separator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 70px;
+}
+
+.circle {
+  height: 50px;
+  width: 50px;
+  background-color: var(--color-off);
+  border-radius: 50%;
+}
+
+.on {
+  background-color: var(--color-on);
+}
