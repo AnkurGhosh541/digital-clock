@@ -2,4 +2,4 @@
 
 A simple digital clock created that displays the local time 
 
-visit [here](https://ankurghosh541.github.io/digital-clock/)
+visit [here](https://ankurghosh541.github.io/digital-clock/) (visit in desktop for best experience)
